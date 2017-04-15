@@ -4,7 +4,6 @@ album_data = pd.read_csv("top_album.csv", sep=',')
 
 album_data.album = album_data.album.str.replace(' ','-')
 album_data.album = album_data.album.str.replace("'",'-')
-album_data.album = album_data.album.str.replace(".",'')
 album_data.album = album_data.album.str.replace(" ?",'')
 album_data.artist = album_data.artist.str.replace("'", '')
 album_data.artist = album_data.artist.str.replace(' ', '-')
